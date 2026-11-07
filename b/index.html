@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Трофейная рыбалка на плато Путорана | База отдыха Накомякен</title>
+<meta name="description" content="Рыбалка мечты на плато Путорана: трофейный таймень, голец и хариус. Одна группа на базе, гид, лодки с моторами, баня. Расписание заездов 2026. Оставьте заявку, перезвоним в удобное время.">
+<meta property="og:title" content="Рыбалка мечты на плато Путорана">
+<meta property="og:description" content="Трофейный таймень, голец и хариус в краю десяти тысяч озёр. Только одна группа на базе.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../photos/used/home/hero.jpg">
+<link rel="icon" href="../photos/used/home/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prata&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+tailwind.config = { theme: { extend: {
+  colors: { ink: { 950:'#000000', 900:'#181818', 800:'#1F1F1F', 700:'#272727', 600:'#313131', gold:'#9DB8CC', gold2:'#C3D6E4', ember:'#0E1B26' }, fog: { 1:'#EAF0F4', 2:'#B9C6CE', 3:'#7E8A94' } },
+  fontFamily: { display:['Prata','serif'], sans:['Manrope','system-ui','sans-serif'] }
+}}};
+</script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="antialiased">
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 focus:z-[100] focus:bg-ink-gold focus:text-ink-ember focus:px-3 focus:py-2 focus:rounded-full caption-3">К содержанию</a>
+<div id="shared-top"></div>
+
+<main id="main">
+<!-- HERO: полноэкранный холодный кадр по референсу «Рыбалка на краю земли» -->
+<section id="top" class="relative h-[92svh] max-h-[900px] min-h-[640px] overflow-hidden">
+  <div id="lslides" class="absolute inset-0">
+    <div class="lslide on"><img src="../photos/used/home/hero.jpg" alt="Рыбак с трофейным тайменем на фоне плато" fetchpriority="high"></div>
+    <div class="lslide"><img src="../photos/used/home/nako-3.jpg" alt="Озеро Накомякен у подножия плато" loading="lazy"></div>
+    <div class="lslide"><img src="../photos/used/tours/vertoletnye/1.jpg" alt="Вертолёт у водопада в каньоне" loading="lazy"></div>
+    <div class="lslide"><img src="../photos/used/home/hero2.png" alt="Спиннинг и хариусы на камнях" loading="lazy"></div>
+  </div>
+  <div class="absolute inset-0" style="background:rgba(10,20,28,.42)" aria-hidden="true"></div>
+  <div class="scrim" aria-hidden="true"></div>
+  <div class="relative z-10 h-full flex flex-col items-center justify-center pt-24 pb-24 text-center px-6">
+    <h1 class="hero-gradient heading-hero">Рыбалка мечты<br>на плато Путорана</h1>
+    <p class="body-3 text-fog-1 mt-6 max-w-[560px]" style="text-wrap:pretty">
+      Трофейный таймень, голец и хариус в краю десяти тысяч озёр и тысячи водопадов.
+      Дикие реки, где не бывает чужих.
+    </p>
+    <div class="mt-10 flex flex-wrap items-center justify-center gap-4">
+      <a href="#order" class="btn btn-primary button-md px-8 py-3">Оставить заявку<svg class="ic arr text-lg" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      <a href="#programs" class="btn btn-outline button-md px-8 py-3">Смотреть программы</a>
+    </div>
+    <span class="caption-4 text-fog-2 mt-4">перезвоним в удобное время</span>
+    <div class="mt-12 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+      <span class="flex items-center gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-fish"/></svg><span class="title-4 text-fog-1 text-left">Таймень до 30 кг</span></span>
+      <span class="flex items-center gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-users"/></svg><span class="title-4 text-fog-1 text-left">Только 1 группа за раз</span></span>
+      <span class="flex items-center gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-calendar"/></svg><span class="title-4 text-fog-1 text-left">6 дней / 7 ночей</span></span>
+    </div>
+  </div>
+  <div id="ldots" class="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex gap-2" role="tablist" aria-label="Слайды фона"></div>
+</section>
+
+<!-- TAGLINE REVEAL -->
+<section class="py-24 lg:py-32 px-6">
+  <p data-tagline class="heading-3 lg:heading-2 max-w-[680px] mx-auto text-center" style="font-family:Prata,serif">
+    Здесь заканчивается связь и начинаются десять тысяч озёр. Здесь рыбалка ещё настоящая.
+  </p>
+</section>
+
+<!-- РАСПИСАНИЕ 2026 -->
+<section id="raspisanie" class="py-24 lg:py-28 px-6 bg-ink-900 scroll-mt-24">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal text-center max-w-[680px] mx-auto">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">Расписание приёма групп</p>
+      <h2 class="heading-2 mt-4">Заезды 2026 года</h2>
+      <p class="body-3 text-fog-2 mt-4">База «Накомякен», стандартный тур: 6 дней / 7 ночей. На базе одновременно только одна группа.</p>
+    </div>
+    <div class="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Июль</p>
+        <p class="heading-5 mt-2 text-fog-1">17 — 24 июля</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Июль — август</p>
+        <p class="heading-5 mt-2 text-fog-1">26 июля — 2 августа</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Август</p>
+        <p class="heading-5 mt-2 text-fog-1">4 — 11 августа</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Август</p>
+        <p class="heading-5 mt-2 text-fog-1">14 — 21 августа</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Август — сентябрь</p>
+        <p class="heading-5 mt-2 text-fog-1">25 августа — 1 сентября</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+      <a href="#order" class="date-card reveal rounded-2xl border border-white/10 bg-ink-800 p-6 block">
+        <p class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Сентябрь</p>
+        <p class="heading-5 mt-2 text-fog-1">4 — 11 сентября</p>
+        <p class="caption-2 text-fog-3 mt-1">7 ночей на базе</p>
+      </a>
+    </div>
+    <p class="reveal caption-2 text-fog-3 mt-6 text-center">За сезон база принимает всего несколько групп. Лето в Заполярье короткое, бронируйте заранее.</p>
+  </div>
+</section>
+
+<!-- СТОИМОСТЬ -->
+<section class="pb-24 px-6 -mt-10">
+  <div class="max-w-6xl mx-auto reveal rounded-2xl border border-ink-gold/40 bg-ink-900 p-8 lg:p-10 grid lg:grid-cols-[1fr_auto] gap-6 items-center">
+    <div>
+      <p class="caption-3 tracking-[0.3em] uppercase text-ink-gold">Стоимость</p>
+      <p class="heading-5 text-fog-1 mt-3">Летняя рыбалка, 6 дней / 7 ночей — <span class="text-ink-gold">120 000 ₽</span> с человека</p>
+      <p class="caption-2 text-fog-3 mt-2">Трансфер отдельно: катер и аэролодка от 180 000 ₽ за группу, вертолёт от 315 000 ₽. Цены 2019 года, актуальные уточняйте.</p>
+    </div>
+    <a href="#order" class="btn btn-primary button-md px-6 py-3 justify-center whitespace-nowrap">Забронировать<svg class="ic arr text-lg" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+  </div>
+</section>
+
+<!-- ПРОГРАММЫ -->
+<section id="programs" class="py-24 lg:py-32 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">Программы</p>
+      <h2 class="heading-2 mt-4">Выберите свою рыбалку</h2>
+      <p class="body-3 text-fog-2 mt-4 max-w-[65ch]">Три программы, одна база. Подробности и фото — на странице каждой программы.</p>
+    </div>
+    <div class="mt-12 grid lg:grid-cols-3 gap-6">
+      <a href="tur-letniy.html" class="reveal lg:col-span-2 group relative rounded-2xl overflow-hidden border border-white/10 min-h-[420px] flex">
+        <img src="../photos/used/tours/letnyaya-rybalka/23-1.jpg" alt="Рыбаки на реке среди осенней лиственницы" class="ph absolute inset-0 w-full h-full object-cover">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/25 to-transparent" aria-hidden="true"></div>
+        <div class="relative mt-auto p-8 lg:p-10">
+          <span class="caption-3 tracking-[0.25em] uppercase text-ink-gold">Флагман</span>
+          <h3 class="heading-4 mt-3">Летняя рыбалка</h3>
+          <p class="body-5 text-fog-2 mt-2 max-w-[52ch]">Хариус, сиг, окунь, налим, щука, голец, таймень. Лодка с мотором на двоих и гид. С 5 июля по 20 сентября.</p>
+          <span class="btn btn-outline button-sm px-4 py-2 mt-6">Смотреть программу<svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg></span>
+        </div>
+      </a>
+      <div class="grid gap-6">
+        <a href="tur-zimnyy.html" class="reveal group relative rounded-2xl overflow-hidden border border-white/10 min-h-[200px] flex">
+          <img src="../photos/used/tours/snegohodnoe/33-1.jpg" alt="Снегоходная трасса в зимнем каньоне" class="ph absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" aria-hidden="true"></div>
+          <div class="relative mt-auto p-6">
+            <h3 class="heading-5">Снегоходы и зимняя рыбалка</h3>
+            <p class="caption-2 text-fog-2 mt-1">160 км по льду озёр. С 1 апреля по 10 мая.</p>
+          </div>
+        </a>
+        <a href="tur-vertolyot.html" class="reveal group relative rounded-2xl overflow-hidden border border-white/10 min-h-[200px] flex">
+          <img src="../photos/used/tours/vertoletnye/1.jpg" alt="Вертолёт у водопада" class="ph absolute inset-0 w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/85 via-black/20 to-transparent" aria-hidden="true"></div>
+          <div class="relative mt-auto p-6">
+            <h3 class="heading-5">Вертолётные экскурсии</h3>
+            <p class="caption-2 text-fog-2 mt-1">Водопады плато с высоты. С 1 июня по 20 сентября.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ТРОФЕИ -->
+<section id="gallery" class="py-24 lg:py-28 px-6 bg-ink-900">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">Трофеи</p>
+      <h2 class="heading-2 mt-4">Что ловится<br>на Накомякене</h2>
+      <p class="body-3 text-fog-2 mt-6 max-w-[60ch]" style="text-wrap:pretty">
+        Реки и озёра плато, куда не добраться без вертолёта или катера. Здесь держится трофейная рыба,
+        которая в доступных местах давно ушла от пресса.
+      </p>
+      <ul class="mt-8 flex flex-wrap gap-2" aria-label="Виды рыб">
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Таймень</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Голец</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Хариус</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Сиг</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Щука</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Окунь</li>
+        <li class="title-4 px-4 py-2 rounded-full border border-ink-gold/40 text-ink-gold">Налим</li>
+      </ul>
+      <a href="galereya.html" class="btn btn-outline button-sm px-4 py-2 mt-8">Фотогалерея<svg class="ic arr" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+    </div>
+    <div class="reveal grid grid-cols-2 gap-4">
+      <img src="../photos/used/tours/letnyaya-rybalka/pic_gal_leto1.jpg" alt="Трофейный голец в руках рыбака" class="ph col-span-2 rounded-2xl w-full h-64 lg:h-72 object-cover border border-white/10">
+      <img src="../photos/used/gallery/letnyaya-rybalka/23.jpg" alt="Улов на камнях у реки" class="ph rounded-2xl w-full h-48 object-cover border border-white/10">
+      <img src="../photos/used/tours/letnyaya-rybalka/pic_gal_leto4.jpg" alt="Хариусы на бревне рядом со спиннингом" class="ph rounded-2xl w-full h-48 object-cover border border-white/10">
+    </div>
+  </div>
+</section>
+
+<!-- КАК ПРОХОДИТ ТУР -->
+<section class="py-24 lg:py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal max-w-[680px]">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">Как это работает</p>
+      <h2 class="heading-2 mt-4">Три шага до первой поклёвки</h2>
+    </div>
+    <div class="mt-14 grid md:grid-cols-3 gap-10">
+      <div class="reveal">
+        <p class="heading-3 text-ink-gold">01</p>
+        <h3 class="heading-5 mt-4">Заявка</h3>
+        <p class="body-6 text-fog-2 mt-3 max-w-[45ch]">Оставляете телефон. Перезваниваем в удобное время, отвечаем на вопросы и подбираем даты заезда.</p>
+      </div>
+      <div class="reveal">
+        <p class="heading-3 text-ink-gold">02</p>
+        <h3 class="heading-5 mt-4">Дорога</h3>
+        <p class="body-6 text-fog-2 mt-3 max-w-[45ch]">Встречаем в аэропорту Норильска. На базу: катер и аэролодка, 4–8 часов по озёрам, или вертолёт, 45 минут.</p>
+      </div>
+      <div class="reveal">
+        <p class="heading-3 text-ink-gold">03</p>
+        <h3 class="heading-5 mt-4">Рыбалка</h3>
+        <p class="body-6 text-fog-2 mt-3 max-w-[45ch]">Лодка с мотором на двоих, гид, баня и ужин после дня на воде. Стандартная продолжительность: 7 дней.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- БАЗА -->
+<section id="base" class="py-24 lg:py-28 px-6 bg-ink-900">
+  <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+    <div class="reveal grid grid-cols-2 gap-4 order-2 lg:order-1">
+      <img src="../photos/used/gallery/lager/20210831_150150-scaled.jpg" alt="Территория базы Накомякен" class="ph col-span-2 rounded-2xl w-full h-64 object-cover border border-white/10">
+      <img src="../photos/used/gallery/lager/stolovaya.jpg" alt="Столовая базы" class="ph rounded-2xl w-full h-44 object-cover border border-white/10">
+      <img src="../photos/used/tours/letnyaya-rybalka/pic_gal_leto5.jpg" alt="Лодки базы у берега" class="ph rounded-2xl w-full h-44 object-cover border border-white/10">
+    </div>
+    <div class="reveal order-1 lg:order-2">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">База</p>
+      <h2 class="heading-2 mt-4">Комфорт там,<br>где нет дорог</h2>
+      <p class="body-3 text-fog-2 mt-6 max-w-[60ch]" style="text-wrap:pretty">
+        База принимает группы до 10 человек. Одновременно на базе только одна группа,
+        поэтому ваш отдых приватный.
+      </p>
+      <ul class="mt-8 grid sm:grid-cols-2 gap-4">
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-house"/></svg><span class="body-5 text-fog-1">Проживание на базе</span></li>
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-utensils"/></svg><span class="body-5 text-fog-1">Трёхразовое питание</span></li>
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-fire"/></svg><span class="body-5 text-fog-1">Баня после дня на воде</span></li>
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-wifi"/></svg><span class="body-5 text-fog-1">Спутниковый интернет</span></li>
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-boat"/></svg><span class="body-5 text-fog-1">ПВХ-лодка и мотор 15 л. с. на двоих</span></li>
+        <li class="flex gap-3"><svg class="ic text-2xl text-ink-gold" aria-hidden="true"><use href="#i-compass"/></svg><span class="body-5 text-fog-1">Опытный гид с группой</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ОТЗЫВЫ -->
+<section class="py-24 lg:py-28 px-6">
+  <div class="max-w-6xl mx-auto">
+    <div class="reveal max-w-[680px]">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">Отзывы</p>
+      <h2 class="heading-2 mt-4">Что говорят гости</h2>
+    </div>
+    <div class="mt-12 grid md:grid-cols-2 gap-6">
+      <figure class="reveal rounded-2xl border border-white/10 bg-ink-900 p-8">
+        <blockquote class="body-3 text-fog-1" style="text-wrap:pretty">«Пять дней выходил на воду в шесть утра и ни разу не пожалел. Голец под два килограмма сходил четыре раза, взял на пятого. Баня вечером отдельный вид удовольствия».</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4">
+          <span class="w-11 h-11 rounded-full bg-ink-gold/15 border border-ink-gold/40 text-ink-gold title-3 flex items-center justify-center" aria-hidden="true">Д</span>
+          <span><span class="title-4 text-fog-1 block">Дмитрий, 47</span><span class="caption-5 text-fog-3">Екатеринбург, летняя рыбалка</span></span>
+        </figcaption>
+      </figure>
+      <figure class="reveal rounded-2xl border border-white/10 bg-ink-900 p-8">
+        <blockquote class="body-3 text-fog-1" style="text-wrap:pretty">«Ловлю тридцать лет, но такое место вижу впервые. Ни одной чужой лодки за неделю. Гид знал каждый перекат на реке».</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4">
+          <span class="w-11 h-11 rounded-full bg-ink-gold/15 border border-ink-gold/40 text-ink-gold title-3 flex items-center justify-center" aria-hidden="true">С</span>
+          <span><span class="title-4 text-fog-1 block">Сергей, 52</span><span class="caption-5 text-fog-3">Москва, летняя рыбалка</span></span>
+        </figcaption>
+      </figure>
+      <figure class="reveal rounded-2xl border border-white/10 bg-ink-900 p-8">
+        <blockquote class="body-3 text-fog-1" style="text-wrap:pretty">«Зимний тур это отдельная песня: 160 километров по льду на снегоходах, а вокруг каньоны в снегу. Лунки, налим и вечер в бане».</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4">
+          <span class="w-11 h-11 rounded-full bg-ink-gold/15 border border-ink-gold/40 text-ink-gold title-3 flex items-center justify-center" aria-hidden="true">А</span>
+          <span><span class="title-4 text-fog-1 block">Андрей, 39</span><span class="caption-5 text-fog-3">Новосибирск, зимний тур</span></span>
+        </figcaption>
+      </figure>
+      <figure class="reveal rounded-2xl border border-white/10 bg-ink-900 p-8">
+        <blockquote class="body-3 text-fog-1" style="text-wrap:pretty">«Жена рыбачить не едет, поэтому взяли вертолётную экскурсию. Водопады из другой категории впечатлений, фотки до сих пор на аватарке».</blockquote>
+        <figcaption class="mt-6 flex items-center gap-4">
+          <span class="w-11 h-11 rounded-full bg-ink-gold/15 border border-ink-gold/40 text-ink-gold title-3 flex items-center justify-center" aria-hidden="true">И</span>
+          <span><span class="title-4 text-fog-1 block">Игорь, 55</span><span class="caption-5 text-fog-3">Краснодар, экскурсия</span></span>
+        </figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="py-24 lg:py-28 px-6 bg-ink-900">
+  <div class="max-w-3xl mx-auto">
+    <div class="reveal text-center">
+      <p class="caption-3 tracking-[0.3em] text-ink-gold uppercase">FAQ</p>
+      <h2 class="heading-2 mt-4">Частые вопросы</h2>
+    </div>
+    <div class="mt-12 space-y-3">
+      <details class="reveal rounded-2xl border border-white/10 bg-ink-800 px-6 py-4" open>
+        <summary class="flex items-center justify-between gap-4 cursor-pointer title-2 text-fog-1">Как добраться до базы?<svg class="ic faq-plus text-ink-gold text-xl" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p class="body-6 text-fog-2 mt-4 max-w-[65ch]">Прилетаете в Норильск, мы встречаем в аэропорту. Дальше на базу: катером и аэролодкой по озёрам, 4–8 часов, или вертолётом, 45 минут. Расстояние от Норильска 150 километров.</p>
+      </details>
+      <details class="reveal rounded-2xl border border-white/10 bg-ink-800 px-6 py-4">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer title-2 text-fog-1">Когда сезон?<svg class="ic faq-plus text-ink-gold text-xl" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p class="body-6 text-fog-2 mt-4 max-w-[65ch]">Летняя рыбалка: 5 июля — 20 сентября. Снегоходный тур: 1 апреля — 10 мая. Вертолётные экскурсии: 1 июня — 20 сентября.</p>
+      </details>
+      <details class="reveal rounded-2xl border border-white/10 bg-ink-800 px-6 py-4">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer title-2 text-fog-1">Что входит в стоимость?<svg class="ic faq-plus text-ink-gold text-xl" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p class="body-6 text-fog-2 mt-4 max-w-[65ch]">Проживание на базе, трёхразовое питание, баня, спутниковый интернет, ПВХ-лодка с мотором 15 л. с. на каждых двух человек, бензин и гид. Трансфер до базы оплачивается отдельно.</p>
+      </details>
+      <details class="reveal rounded-2xl border border-white/10 bg-ink-800 px-6 py-4">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer title-2 text-fog-1">Как забронировать?<svg class="ic faq-plus text-ink-gold text-xl" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p class="body-6 text-fog-2 mt-4 max-w-[65ch]">Оставьте заявку на сайте или напишите в WhatsApp. Администратор перезвонит, ответит на вопросы и закрепит даты заезда.</p>
+      </details>
+      <details class="reveal rounded-2xl border border-white/10 bg-ink-800 px-6 py-4">
+        <summary class="flex items-center justify-between gap-4 cursor-pointer title-2 text-fog-1">Подойдёт ли новичку?<svg class="ic faq-plus text-ink-gold text-xl" aria-hidden="true"><use href="#i-plus"/></svg></summary>
+        <p class="body-6 text-fog-2 mt-4 max-w-[65ch]">Да. С группой работает опытный гид, рыбачите с устойчивых ПВХ-лодок на спокойных озёрах, снасти и технику подскажут на месте.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ФИНАЛЬНЫЙ CTA -->
+<section id="order" class="relative py-24 lg:py-28 px-6 scroll-mt-24">
+  <img src="../photos/used/home/nako-3.jpg" alt="" aria-hidden="true" class="absolute inset-0 w-full h-full object-cover" style="filter:brightness(.9)">
+  <div class="absolute inset-0 bg-black/60" aria-hidden="true"></div>
+  <div class="relative max-w-3xl mx-auto">
+    <div class="reveal text-center max-w-[680px] mx-auto">
+      <h2 class="heading-2">Оставьте заявку</h2>
+      <p class="body-3 text-fog-2 mt-4">Перезвоним в удобное время, ответим на вопросы и подберём даты заезда.</p>
+    </div>
+    <form class="lead-form reveal mt-10 rounded-2xl border border-white/10 bg-ink-900/90 backdrop-blur p-8 lg:p-10 grid gap-5" novalidate>
+      <div>
+        <label for="f-name" class="caption-3 tracking-wide text-fog-2 block mb-2">Имя</label>
+        <input id="f-name" name="name" type="text" autocomplete="name" placeholder="Как к вам обращаться" class="field">
+        <p class="err caption-5 text-red-400 mt-2 hidden">Представьтесь, чтобы мы знали, как обращаться.</p>
+      </div>
+      <div>
+        <label for="f-phone" class="caption-3 tracking-wide text-fog-2 block mb-2">Телефон</label>
+        <input id="f-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 ___ ___-__-__" class="field">
+        <p class="err caption-5 text-red-400 mt-2 hidden">Нужен телефон, чтобы перезвонить. Формат: +7 и 10 цифр.</p>
+      </div>
+      <fieldset>
+        <legend class="caption-3 tracking-wide text-fog-2 mb-2">Когда перезвонить</legend>
+        <div class="flex flex-wrap gap-2">
+          <label class="chip-radio"><input type="radio" name="time" value="Как можно скорее" checked><span>Как можно скорее</span></label>
+          <label class="chip-radio"><input type="radio" name="time" value="Утром, 9:00–12:00"><span>Утром, 9:00–12:00</span></label>
+          <label class="chip-radio"><input type="radio" name="time" value="Днём, 12:00–18:00"><span>Днём, 12:00–18:00</span></label>
+          <label class="chip-radio"><input type="radio" name="time" value="Вечером, 18:00–21:00"><span>Вечером, 18:00–21:00</span></label>
+        </div>
+      </fieldset>
+      <label class="flex items-start gap-3 cursor-pointer">
+        <input name="consent" type="checkbox" class="mt-1 w-4 h-4 accent-[#E3A857]">
+        <span class="caption-2 text-fog-2">Даю согласие на обработку персональных данных в соответствии с <button type="button" id="open-consent" class="text-ink-gold underline underline-offset-2">пользовательским соглашением</button>.</span>
+      </label>
+      <p class="consent-err caption-5 text-red-400 hidden">Без согласия мы не сможем принять заявку.</p>
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mt-2">
+        <button type="submit" class="btn btn-primary button-md px-6 py-3 justify-center"><span class="lbl">Оставить заявку</span><svg class="ic arr text-lg" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        <a href="https://wa.me/79313568107" class="btn btn-ghost button-sm px-4 py-3 justify-center"><svg class="ic text-lg" aria-hidden="true"><use href="#i-wa"/></svg>WhatsApp</a>
+        <!-- TODO: реальный username Telegram -->
+        <a href="https://t.me/nakomyaken" class="btn btn-ghost button-sm px-4 py-3 justify-center"><svg class="ic text-lg" aria-hidden="true"><use href="#i-tg"/></svg>Telegram</a>
+      </div>
+    </form>
+    <div class="lead-success hidden mt-10 rounded-2xl border border-ink-gold/40 bg-ink-900/90 backdrop-blur p-10 text-center">
+      <svg class="ic text-4xl text-ink-gold" style="width:2.5em;height:2.5em" aria-hidden="true"><use href="#i-check"/></svg>
+      <h3 class="heading-5 mt-4">Заявка принята</h3>
+      <p class="body-3 text-fog-2 mt-2">Перезвоним в выбранное время. Если вопрос срочный, напишите в WhatsApp.</p>
+      <a href="https://wa.me/79313568107" class="btn btn-outline button-sm px-4 py-2 mt-6"><svg class="ic" aria-hidden="true"><use href="#i-wa"/></svg>Написать в WhatsApp</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<div id="shared-end"></div>
+<noscript><div><img src="https://mc.yandex.ru/watch/95566409" style="position:absolute;left:-9999px" alt=""></div></noscript>
+<script src="shared.js"></script>
+<script>if(location.search.indexOf("nocookie")>-1){var cb=document.getElementById("cookie-bar");if(cb)cb.remove();}</script>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+ {"@type":"Question","name":"Как добраться до базы?","acceptedAnswer":{"@type":"Answer","text":"Прилетаете в Норильск, встречаем в аэропорту. Дальше на базу катером и аэролодкой по озёрам, 4–8 часов, или вертолётом, 45 минут. Расстояние от Норильска 150 километров."}},
+ {"@type":"Question","name":"Когда сезон рыбалки?","acceptedAnswer":{"@type":"Answer","text":"Летняя рыбалка: 5 июля — 20 сентября. Снегоходный тур: 1 апреля — 10 мая. Вертолётные экскурсии: 1 июня — 20 сентября."}},
+ {"@type":"Question","name":"Что входит в стоимость тура?","acceptedAnswer":{"@type":"Answer","text":"Проживание, трёхразовое питание, баня, спутниковый интернет, ПВХ-лодка с мотором 15 л.с. на двоих, бензин и гид. Трансфер до базы оплачивается отдельно."}}
+]}
+</script>
+<script>
+/* Левый слайдер: 4 кадра, полоски-переключатели */
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var slides=[].slice.call(document.querySelectorAll('#lslides .lslide'));
+  var dotsWrap=document.getElementById('ldots');
+  var i=0,timer;
+  slides.forEach(function(_,n){
+    var d=document.createElement('button');
+    d.type='button';
+    d.className='h-[3px] rounded-full transition-all duration-500 '+(n===0?'w-12 bg-ink-gold':'w-8 bg-white/30 hover:bg-white/60');
+    d.setAttribute('role','tab');
+    d.setAttribute('aria-label','Фото '+(n+1));
+    d.addEventListener('click',function(){go(n);restart();});
+    dotsWrap.appendChild(d);
+  });
+  function go(n){
+    slides[i].classList.remove('on'); dotsWrap.children[i].className='h-[3px] rounded-full transition-all duration-500 w-8 bg-white/30 hover:bg-white/60';
+    i=(n+slides.length)%slides.length;
+    slides[i].classList.add('on'); dotsWrap.children[i].className='h-[3px] rounded-full transition-all duration-500 w-12 bg-ink-gold';
+  }
+  function restart(){ if(reduce) return; clearInterval(timer); timer=setInterval(function(){go(i+1);},5000); }
+  restart();
+})();
+</script>
+</body>
+</html>

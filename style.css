@@ -1,0 +1,140 @@
+/* Накомякен — общий стиль прототипа. Шкалы и правила: skill landing-page-design + docs/design/DESIGN_DOCTRINE.md */
+:root { --ease-base: cubic-bezier(0.22,1,0.36,1); }
+html,body{overflow-x:hidden}
+body { background:#000000; color:#F5F2EA; font-family:Manrope,system-ui,sans-serif; -webkit-font-smoothing:antialiased; }
+
+/* Фото: ярче и сочнее по умолчанию */
+.ph{transition:transform .7s var(--ease-base), filter .5s var(--ease-base); filter:brightness(1.1) contrast(1.08) saturate(1.22);}
+.group:hover .ph{transform:scale(1.06); filter:brightness(1.16) contrast(1.1) saturate(1.3);}
+
+/* B1: именованные текстовые стили (Tailwind-шкала) */
+.heading-1{font-family:Prata,serif;font-size:60px;line-height:1;font-weight:400}
+.heading-hero{font-family:Prata,serif;font-size:72px;line-height:1.05;font-weight:400}
+.heading-2{font-family:Prata,serif;font-size:48px;line-height:1.1;font-weight:400}
+.heading-3{font-family:Prata,serif;font-size:36px;line-height:40px;font-weight:400}
+.heading-4{font-family:Prata,serif;font-size:30px;line-height:36px;font-weight:400}
+.heading-5{font-family:Prata,serif;font-size:24px;line-height:32px;font-weight:400}
+.heading-6{font-family:Manrope,sans-serif;font-size:20px;line-height:28px;font-weight:600}
+.title-1{font-size:20px;line-height:28px;font-weight:500}
+.title-2{font-size:18px;line-height:28px;font-weight:500}
+.title-3{font-size:16px;line-height:24px;font-weight:500}
+.title-4{font-size:14px;line-height:20px;font-weight:500}
+.title-5{font-size:12px;line-height:16px;font-weight:500}
+.body-1{font-size:16px;line-height:24px;font-weight:600}
+.body-2{font-size:16px;line-height:24px;font-weight:500}
+.body-3{font-size:16px;line-height:24px;font-weight:400}
+.body-4{font-size:14px;line-height:20px;font-weight:600}
+.body-5{font-size:14px;line-height:20px;font-weight:500}
+.body-6{font-size:14px;line-height:20px;font-weight:400}
+.button-lg{font-size:18px;line-height:28px;font-weight:600}
+.button-md{font-size:16px;line-height:24px;font-weight:600}
+.button-sm{font-size:14px;line-height:20px;font-weight:600}
+.caption-1{font-size:14px;line-height:20px;font-weight:500}
+.caption-2{font-size:14px;line-height:20px;font-weight:400}
+.caption-3{font-size:12px;line-height:16px;font-weight:600}
+.caption-4{font-size:12px;line-height:16px;font-weight:500}
+.caption-5{font-size:12px;line-height:16px;font-weight:400}
+@media (max-width:768px){
+  .heading-hero{font-size:24px;line-height:30px}
+  .heading-1{font-size:40px;line-height:44px}
+  .heading-2{font-size:34px;line-height:38px}
+  .heading-3{font-size:30px;line-height:36px}
+}
+
+.nav-link{font-size:14px;line-height:20px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#C9C4B8;transition:color .3s var(--ease-base);position:relative;padding-bottom:6px}
+.nav-link:hover{color:#E3A857}
+.nav-link[aria-current="page"]{color:#E3A857}
+.nav-link[aria-current="page"]::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;background:#E3A857;border-radius:2px}
+
+/* Кнопки: живой hover/active/focus */
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:9999px;transition:transform .5s var(--ease-base),background-color .3s var(--ease-base),border-color .3s var(--ease-base),color .3s var(--ease-base),box-shadow .3s var(--ease-base);cursor:pointer}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.97)}
+.btn:focus-visible{outline:2px solid #E3A857;outline-offset:3px}
+.btn-primary{background:#E3A857;color:#131209;box-shadow:0 8px 24px -8px rgba(227,168,87,.45)}
+.btn-primary:hover{background:#F0BC77;box-shadow:0 12px 28px -8px rgba(227,168,87,.6)}
+.btn-outline{border:1px solid #E3A857;color:#E3A857;background:rgba(19,18,9,.25)}
+.btn-outline:hover{background:rgba(227,168,87,.18)}
+.btn-ghost{border:1px solid rgba(245,242,234,.25);color:#F5F2EA;background:rgba(0,0,0,.25)}
+.btn-ghost:hover{border-color:#E3A857;color:#E3A857}
+.btn .arr{transition:transform .5s var(--ease-base)}
+.btn:hover .arr{transform:translateX(4px)}
+
+a{transition:color .3s var(--ease-base)}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid #E3A857;outline-offset:3px;border-radius:4px}
+
+.ic{width:1.25em;height:1.25em;flex:none;display:inline-block;vertical-align:-0.2em}
+
+/* Hero слайдер */
+.lslide{position:absolute;inset:0;opacity:0;transition:opacity 1s var(--ease-base)}
+.lslide.on{opacity:1}
+.lslide img{width:100%;height:100%;object-fit:cover;object-position:center;filter:brightness(1.12) contrast(1.1) saturate(1.28)}
+.lslide.on img{animation:kenburns 9s var(--ease-base) forwards}
+.hero-left{clip-path:polygon(0 0,56% 0,40% 100%,0 100%)}
+.hero-right{clip-path:polygon(56% 0,100% 0,100% 100%,40% 100%)}
+@keyframes kenburns{from{transform:scale(1.02)}to{transform:scale(1.1)}}
+/* Бесконечный ken-burns осознанно: слайдер и есть динамика hero, отключается при reduced-motion */
+.scrim{position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.82) 0%,rgba(0,0,0,.35) 45%,rgba(0,0,0,.15) 100%)}
+.hero-gradient{background:linear-gradient(90deg,#FFFFFF 30%,#9B9B9B 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Ревилы и tagline */
+.reveal{opacity:0;transform:translateY(32px);transition:opacity .7s var(--ease-base),transform .7s var(--ease-base)}
+.reveal.in{opacity:1;transform:translateY(0)}
+.tw{opacity:.3;transition:opacity .5s var(--ease-base)}
+.tw.on{opacity:1}
+.scroll-hint{animation:drift 2.4s var(--ease-base) infinite}
+@keyframes drift{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(8px);opacity:.5}}
+
+@media (prefers-reduced-motion: reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  .tw{opacity:1;transition:none}
+  .scroll-hint{animation:none}
+  .lslide.on img{animation:none}
+  .group:hover .ph{transform:none}
+  .btn:hover{transform:none}
+  *{scroll-behavior:auto}
+}
+
+details summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .5s var(--ease-base)}
+
+/* Расписание: живые строки */
+.date-card{transition:transform .5s var(--ease-base),border-color .3s var(--ease-base),background-color .3s var(--ease-base)}
+.date-card:hover{transform:translateY(-4px);border-color:#E3A857;background:#272727}
+
+/* Кнопка чата: рыбак со спиннингом */
+.chat-fab{position:relative;width:64px;height:64px;border-radius:9999px;background:#E3A857;color:#131209;box-shadow:0 10px 30px -8px rgba(227,168,87,.55);transition:transform .5s var(--ease-base),box-shadow .3s var(--ease-base)}
+.chat-fab:hover{transform:translateY(-3px) scale(1.04);box-shadow:0 16px 36px -8px rgba(227,168,87,.7)}
+.chat-fab svg{width:40px;height:40px}
+.fisher-rod{transform-origin:34px 28px;animation:rodsway 4.5s var(--ease-base) infinite}
+@keyframes rodsway{0%,100%{transform:rotate(0deg)}50%{transform:rotate(-3.5deg)}}
+.fisher-line{animation:linewave 4.5s var(--ease-base) infinite}
+@keyframes linewave{0%,100%{transform:translateX(0)}50%{transform:translateX(1.5px)}}
+.fisher-fish{opacity:0}
+.fisher-ring{opacity:0;transform-origin:50px 49px}
+.chat-fab.bite .fisher-rod{animation:strike .9s var(--ease-base)}
+@keyframes strike{0%{transform:rotate(0)}30%{transform:rotate(16deg)}60%{transform:rotate(-4deg)}100%{transform:rotate(0)}}
+.chat-fab.bite .fisher-fish{animation:fishjump .9s var(--ease-base)}
+@keyframes fishjump{0%{opacity:0;transform:translateY(6px)}35%{opacity:1;transform:translateY(-7px)}70%{opacity:1;transform:translateY(2px)}100%{opacity:0;transform:translateY(8px)}}
+.chat-fab.bite .fisher-ring{animation:ripple .9s var(--ease-base)}
+@keyframes ripple{0%{opacity:.8;transform:scale(.3)}100%{opacity:0;transform:scale(1.6)}}
+.chat-fab .bite-dot{position:absolute;top:2px;right:2px;width:12px;height:12px;border-radius:9999px;background:#E3A857;border:2px solid #131209;opacity:0;transform:scale(.5);transition:all .3s var(--ease-base)}
+.chat-fab.bite .bite-dot,.chat-fab.hasmsg .bite-dot{opacity:1;transform:scale(1)}
+@media (prefers-reduced-motion: reduce){
+  .fisher-rod,.fisher-line{animation:none}
+  .chat-fab.bite .fisher-rod,.chat-fab.bite .fisher-fish,.chat-fab.bite .fisher-ring{animation:none}
+  .chat-fab.bite .fisher-fish{opacity:1;transform:none}
+}
+
+/* Форма */
+.field{width:100%;min-height:48px;border-radius:12px;background:#272727;border:1px solid rgba(255,255,255,.1);padding:0 16px;font-size:16px;line-height:24px;color:#F5F2EA}
+.field::placeholder{color:#8F8B80}
+.field:focus{border-color:#E3A857}
+.field.errb{border-color:#f87171}
+.chip-radio{cursor:pointer}
+.chip-radio input{position:absolute;opacity:0;width:0;height:0}
+.chip-radio span{display:inline-block;padding:10px 16px;border-radius:9999px;border:1px solid rgba(255,255,255,.15);color:#C9C4B8;font-size:14px;line-height:20px;transition:all .3s var(--ease-base)}
+.chip-radio input:checked + span{border-color:#E3A857;color:#E3A857;background:rgba(227,168,87,.1)}
+.chip-radio input:focus-visible + span{outline:2px solid #E3A857;outline-offset:3px}
+.chip-radio span:hover{border-color:#E3A857;color:#E3A857}
