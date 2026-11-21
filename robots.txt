@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://alsam2009.github.io/putoranastar-site/sitemap.xml
